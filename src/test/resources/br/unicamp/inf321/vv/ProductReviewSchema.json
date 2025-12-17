@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "language",
+    "description",
+    "productId",
+    "date",
+    "rating",
+    "customerId"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "language": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "productId": {
+      "type": "integer"
+    },
+    "date": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "number"
+    },
+    "customerId": {
+      "type": "integer"
+    }
+  }
+}

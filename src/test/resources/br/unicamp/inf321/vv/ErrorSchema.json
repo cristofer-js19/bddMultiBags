@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "required": [
+    "timestamp",
+    "status",
+    "error",
+    "message",
+    "path"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "timestamp": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "integer"
+    },
+    "error": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    }
+  }
+}

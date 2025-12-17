@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "emailAddress",
+    "billing",
+    "delivery",
+    "gender",
+    "language",
+    "firstName",
+    "lastName",
+    "provider",
+    "storeCode",
+    "userName",
+    "rating",
+    "ratingCount",
+    "attributes",
+    "groups"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "emailAddress": {
+      "type": "string"
+    },
+    "billing": {
+      "type": "object",
+      "required": [
+        "postalCode",
+        "firstName",
+        "lastName",
+        "bilstateOther",
+        "company",
+        "phone",
+        "address",
+        "city",
+        "stateProvince",
+        "billingAddress",
+        "latitude",
+        "longitude",
+        "zone",
+        "country"
+      ],
+      "properties": {
+        "postalCode": {
+          "type": ["null", "string"]
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "bilstateOther": {
+          "type": ["null", "string"]
+        },
+        "company": {
+          "type": ["null", "string"]
+        },
+        "phone": {
+          "type": ["null", "string"]
+        },
+        "address": {
+          "type": ["null", "string"]
+        },
+        "city": {
+          "type": ["null", "string"]
+        },
+        "stateProvince": {
+          "type": ["null", "string"]
+        },
+        "billingAddress": {
+          "type": "boolean"
+        },
+        "latitude": {
+          "type": ["null", "number"]
+        },
+        "longitude": {
+          "type": ["null", "number"]
+        },
+        "zone": {
+          "type": ["null", "string"]
+        },
+        "country": {
+          "type": ["null", "string"]
+        }
+      }
+    },
+    "delivery": {
+      "type": ["null", "string"]
+    },
+    "gender": {
+      "type":  ["null", "string"]
+    },
+    "language": {
+      "type":  ["null", "string"]
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "provider": {
+      "type":  ["null", "string"]
+    },
+    "storeCode": {
+      "type":  ["null", "string"]
+    },
+    "userName": {
+      "type":  ["null", "string"]
+    },
+    "rating": {
+      "type": "number"
+    },
+    "ratingCount": {
+      "type": "integer"
+    },
+    "attributes": {
+      "type": "array",
+      "items": {}
+    },
+    "groups": {
+      "type": "array",
+      "items": {}
+    }
+  }
+}
