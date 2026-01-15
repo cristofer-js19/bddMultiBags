@@ -19,6 +19,9 @@ Frameworks e libs principais
 - Maven (build e execução de testes)
 
 
+## Java version:
+- Java 8
+
 ## Como executar os testes:
 
 1. Efetuar o clone do repositório:
